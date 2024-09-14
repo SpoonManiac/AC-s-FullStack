@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{nomePag}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #d3d3d3;
+        }
+        .capa-respostas {
+            background-image: url('/static/img/capa.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+            width: 100%;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary capa-respostas">
+        <a class="navbar-brand" href="#"></a>
+    </nav>
+
+    <div class="container-fluid py-5">
+        <div class="text-center mt-1">
+            <h2>{{nomePag}}</h2>
+            <p>
+                <strong>CDN</strong> (Content Delivery Network, ou Rede de Entrega de Conteúdo) é um instrumento que um site pode usar para hospedar seus arquivos, como imagens, vídeos, e também bibliotecas como <strong>Bootstrap</strong> e <strong>jQuery</strong>. O objetivo é garantir carregamentos mais rápidos para os usuários em todo o mundo.
+            </p>
+            
+            <h2>Como Funciona</h2>
+            <ul>
+                <li><strong>Distribuição Geográfica:</strong> As CDNs possuem servidores localizados em diferentes locais chamados de pontos de presença (PoPs). Quando um usuário solicita um conteúdo (como uma página web, imagem ou vídeo), a CDN entrega o conteúdo a partir do servidor mais próximo geograficamente, reduzindo o tempo de carregamento.</li>
+                <li><strong>Armazenamento em Cache:</strong> O conteúdo do site (imagens, arquivos de estilo, scripts, etc.) é armazenado em cache nos servidores da CDN. Assim, quando um usuário solicita esse conteúdo, ele é entregue diretamente do servidor da CDN, sem a necessidade de acessar o servidor principal da aplicação.</li>
+                <li><strong>Melhor Performance:</strong> Ao distribuir o conteúdo através de servidores próximos ao usuário, a CDN reduz a latência (o tempo de resposta entre a solicitação e o recebimento do conteúdo). Isso resulta em sites que carregam mais rapidamente, especialmente em regiões distantes do servidor original.</li>
+                <li><strong>Redução de Carga no Servidor de Origem:</strong> Como a CDN entrega a maior parte do conteúdo estático, o servidor principal não fica sobrecarregado com tantas requisições, melhorando a escalabilidade e a estabilidade do site.</li>
+                <li><strong>Segurança Adicional:</strong> Algumas CDNs oferecem recursos extras, como proteção contra ataques DDoS (Distributed Denial of Service) e HTTPS seguro, tornando a infraestrutura do site mais resistente a ameaças.</li>
+            </ul>
+            <p>
+                Ou seja, os CDNs são amplamente utilizadas para sites de grande tráfego, serviços de streaming de vídeo, redes sociais e qualquer aplicação que precisa entregar conteúdo de forma eficiente e em alta velocidade.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{nomePag}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #d3d3d3;
+        }
+        .capa-respostas {
+            background-image: url('/static/img/capa.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+            width: 100%;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary capa-respostas">
+        <a class="navbar-brand" href="#"></a>
+    </nav>
+
+    <div class="container-fluid py-5">
+        <div class="text-center mt-1">
+            <h2>{{nomePag}}</h2>
+            <p>O <strong>Bootstrap</strong> é um código de forma aberta que serve para desenvolver sites. Originalmente, ele foi feito com <strong>Less</strong> (um pré-processador de código CSS), mas atualmente também é possível usar <strong>Sass</strong> para compilar o código CSS, que é CSS puro.</p>
+    
+            <h2>Principais Pontos Sobre Como o Bootstrap Funciona</h2>
+            <ul>
+                <li><strong>Sistema de Grid (Grade):</strong> O Bootstrap utiliza um sistema de grid baseado em 12 colunas, que facilita o layout responsivo. Você pode dividir a página em colunas e linhas e ajustar o conteúdo conforme o tamanho da tela (desktop, tablet, celular).<br><span class="example">Por exemplo, você pode especificar que um determinado bloco ocupará 6 colunas em telas grandes e 12 colunas (ou seja, a linha inteira) em telas menores.</span></li>
+                <li><strong>Componentes Pré-estilizados:</strong> Bootstrap vem com uma ampla gama de componentes prontos, como botões, barras de navegação, formulários, cartões, modais, tabelas, alertas, etc. Esses componentes são facilmente customizáveis e podem ser usados diretamente no HTML.</li>
+                <li><strong>CSS e Classes Responsivas:</strong> Bootstrap inclui um conjunto de classes CSS prontas que tornam o design responsivo e adaptável a diferentes tamanhos de tela. Isso significa que o layout e os elementos do site se ajustam automaticamente quando visualizados em dispositivos de tamanhos variados, como smartphones, tablets e desktops.</li>
+                <li><strong>Javascript e Plugins:</strong> O Bootstrap oferece interatividade por meio de plugins baseados em JavaScript (muitos usando jQuery). Esses plugins permitem criar elementos interativos como carrosséis de imagens, modais (janelas pop-up), dropdowns, tooltips, etc.</li>
+                <li><strong>Personalização:</strong> O Bootstrap permite personalizar os componentes e estilos, ajustando variáveis do CSS (via SASS/SCSS) ou sobrescrevendo o estilo padrão com seus próprios arquivos de CSS, de modo a adaptar-se ao design específico da aplicação.</li>
+                <li><strong>Responsividade e Mobile-First:</strong> Bootstrap é construído com o conceito de design “mobile-first” (primeiro para dispositivos móveis). Isso significa que o layout e os estilos são otimizados inicialmente para telas menores e se expandem conforme o tamanho da tela aumenta.</li>
+            </ul>
+
+            <p>Essas ferramentas tornam o Bootstrap uma solução eficiente para criar interfaces que funcionam bem em diferentes dispositivos sem a necessidade de reescrever muito código de estilo ou layout.</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

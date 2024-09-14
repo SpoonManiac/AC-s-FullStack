@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    
+
+    <style>
+        .container{
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .page-header{
+            margin-bottom: 5em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="page-header text-center">
+            <h1>{{titulo}}</h1>
+        </div>
+        <form action="/criar" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="imagem">Imagem</label>
+                <input type="file" id="imagem" name="imagem" class="form-control" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="link_ver_mais">Pag Ver mais</label>
+                <input type="text" id="link_ver_mais" name="link_ver_mais" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{nomePag}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #d3d3d3;
+        }
+        .capa-respostas {
+            background-image: url('/static/img/capa.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+            width: 100%;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary capa-respostas">
+        <a class="navbar-brand" href="#"></a>
+    </nav>
+
+    <div class="container-fluid py-5">
+        <div class="text-center mt-1">
+            <h2>{{nomePag}}</h2>
+            <p>
+                O modelo <strong>Client-Server</strong> (Cliente-Servidor) é uma arquitetura onde duas partes, o cliente e o servidor, interagem. 
+            </p>
+            <p>
+                O <strong>Cliente</strong> é o usuário ou dispositivo que solicita dados ou realiza uma ação no servidor.
+            </p>
+            <p>
+                Já o <strong>Servidor</strong> hospeda os arquivos, gerencia os dados e processa as solicitações, enviando de volta as respostas ao cliente.
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h2>Padrão de Design MVC (Model-View-Controller)</h2>
+        <p>
+            O <strong>Model-View-Controller (MVC)</strong> é um padrão de design de software que divide a aplicação em três componentes principais:
+        </p>
+        <p>
+            O <strong>Model</strong> funciona como um gerente de loja, sendo responsável por gerenciar o acesso e a manipulação dos dados no banco de dados.
+        </p>
+        <p>
+            A <strong>View</strong> é a camada de apresentação, ou seja, exibe as informações ao usuário, como imagens e textos. Ela não lida com a lógica de negócios, apenas com a interface.
+        </p>
+        <p>
+            O <strong>Controller</strong> é o controlador da aplicação. Ele recebe as entradas do usuário através da View, processa essas informações e, se necessário, aciona o Model para atualizar os dados no banco de dados, controlando o fluxo da aplicação.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

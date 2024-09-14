@@ -1,0 +1,34 @@
+.header-bg {
+    background-image: url('/static/img/Background-image.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .stocksir-logo{
+    width: 7em;
+    height: auto;
+    margin-left: -13em;
+  }
+  
+  .card {
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-img-top{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-body {
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  .ver-mais {
+    width: 6em;
+    font-size: 0.875rem;
+    margin-top: auto;
+  }
